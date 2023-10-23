@@ -1,0 +1,101 @@
+<!-- B. Create a survey form with Fields; First Name, Last Name, Date of Birth, Country (dropdown),
+Gender (checkbox), Profession, email, and mobile number. All the input fields are
+necessary to submit the form. Create two buttons Submit and Reset. Reset will reset the
+form while clicking on submit, first, it will check all the fields and necessary validations and
+then a popup will appear displaying all the selected values with the label in front of it. On
+closing the popup, the form should reset all the values. Use the following for reference -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section class="container">
+    <h1 class="header">Customer Survey Form</h1>
+    <form action="#" class="form">
+        <div class="column">
+        <div class="input-box">
+            <label for="fname">First Name </label>
+            <input type="text" id="fname" placeholder="Enter first name" required>
+        </div>
+        <div class="input-box">
+            <label for="lname">Last Name </label>
+            <input type="text" id="lname" placeholder="Enter last name " required>
+        </div>
+    </div>
+        <div class="column">
+            <div class="input-box">
+                <label for="num">Phone Number</label>
+                <input type="number" id="num" placeholder="Enter Phone number" required>
+                <!-- <label>Phone Number</label> -->
+                <!-- <input type="number" placeholder="Enter Phone number" required> -->
+            </div>
+       
+        <div class="input-box">
+            <label for="dat">DOB </label>
+            <input type="date" id="dat" placeholder="Enter birth date" required>
+        </div>
+    </div>
+    <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+            <div class="gender">
+                <input type="checkbox" id="check-male" name="gender" checked>
+                <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+                <input type="checkbox" id="check-female" name="gender" checked>
+                <label for="check-female">Female</label>
+            </div><div class="gender">
+                <input type="checkbox" id="check-other" name="gender" checked>
+                <label for="check-other">Transgender</label>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+    <div class="input-box">
+        <label for="em">Email Address</label>
+            <input type="email" id="em" placeholder="Enter email Address " required>
+    </div>
+    <div class="input-box">
+        <label for="profession">Profession</label>
+        <input type="text" id="profession" placeholder="Enter profession" required>
+    </div>
+</div>
+    <div class="select-box">
+        <select>
+        <option hidden>Country</option>
+        <option>America</option>
+        <option>Japan</option>
+        <option>India</option>
+        <option>Nepal</option>
+        <option>Germany</option>
+    </select>
+    </div>    
+    <div class="column">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</div>
+    </form>
+   </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
